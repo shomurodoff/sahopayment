@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Raleway:wght@400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+.ant-space-item {
+  display: flex;
+}
+
+.hero-statistics {
+  @apply flex flex-col flex-col-reverse items-start;
+}
+
+.hero-statistics .ant-statistic-title {
+  @apply text-xl !text-gray-300;
+}
+.hero-statistics .ant-statistic-content {
+  @apply text-4xl font-bold text-white;
+}
+:where(.css-dev-only-do-not-override-kwhrh).ant-form-vertical
+  .ant-form-item-label,
+:where(.css-dev-only-do-not-override-kwhrh).ant-col-24.ant-form-item-label,
+:where(.css-dev-only-do-not-override-kwhrh).ant-col-xl-24.ant-form-item-label {
+  @apply !p-0;
+}
+
+/* Layout Page */
+:where(.css-dev-only-do-not-override-1hkov45).ant-page-header
+  :where(.css-dev-only-do-not-override-1hkov45).ant-page-header-heading-left {
+  @apply flex-col items-start;
+}
+:where(.css-dev-only-do-not-override-sfab6a).ant-page-header
+  :where(.css-dev-only-do-not-override-sfab6a).ant-page-header-heading-left {
+  @apply flex-col items-start;
+}
+
+:where(.css-dev-only-do-not-override-1hkov45).ant-pro-page-container
+  :where(
+    .css-dev-only-do-not-override-1hkov45
+  ).ant-pro-page-container-warp-page-header,
+:where(.css-dev-only-do-not-override-sfab6a).ant-pro-page-container
+  :where(
+    .css-dev-only-do-not-override-sfab6a
+  ).ant-pro-page-container-warp-page-header {
+  padding: 0;
+}
